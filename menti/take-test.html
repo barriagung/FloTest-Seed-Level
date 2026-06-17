@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FloTest - Kerjakan Tes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1>Kerjakan Tes</h1>
+      <nav aria-label="Navigasi kerjakan tes">
+        <a href="dashboard.html">Dashboard</a>
+        <a class="logout" href="../index.html">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card content-card">
+      <h2>HTML Basic Test</h2>
+      <form action="result.html" method="get">
+        <fieldset>
+          <legend>Apa fungsi HTML?</legend>
+          <label><input type="radio" name="answer" value="A"> A. HyperText Markup Language</label>
+          <label><input type="radio" name="answer" value="B"> B. HyperText Markdown Language</label>
+          <label><input type="radio" name="answer" value="C"> C. HighText Machine Language</label>
+          <label><input type="radio" name="answer" value="D"> D. Home Tool Markup Language</label>
+        </fieldset>
+
+        <div class="form-actions">
+          <button class="button secondary" type="button" onclick="window.location.href='dashboard.html'">Sebelumnya</button>
+          <button class="button secondary" type="button" onclick="window.location.href=''">Selanjutnya</button>
+          <button class="button" type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>FloTest - Kerjakan Tes</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FloTest - Form Buat Tes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1>Buat Tes Baru</h1>
+      <nav aria-label="Navigasi buat tes">
+        <a href="dashboard.html">Dashboard</a>
+        <a class="logout" href="../index.html">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card content-card">
+      <h2>Form Buat Tes</h2>
+      <form action="#" method="post">
+        <label for="test-title">Judul Tes</label>
+        <input type="text" id="test-title" name="test-title" placeholder="Masukkan judul tes" required>
+
+        <label for="test-description">Deskripsi Tes</label>
+        <textarea id="test-description" name="test-description" rows="4" placeholder="Tuliskan deskripsi tes" required></textarea>
+
+        <label for="test-status">Status</label>
+        <select id="test-status" name="test-status">
+          <option value="draft">Draft</option>
+          <option value="published">Published</option>
+          <option value="archived">Archived</option>
+        </select>
+
+        <button type="submit">Simpan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>FloTest - Form Buat Tes</p>
+  </footer>
+</body>
+</html>
