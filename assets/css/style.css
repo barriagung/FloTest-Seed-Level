@@ -1,4 +1,19 @@
-/* Global style */
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* ==================================================
+   GLOBAL
+================================================== */
+
 :root {
   --bg: #f4f7fb;
   --surface: #ffffff;
@@ -9,12 +24,7 @@
   --muted: #55677a;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
   font-family: Inter, system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
@@ -25,6 +35,39 @@ a {
   color: var(--primary);
   text-decoration: none;
 }
+
+button,
+.input,
+select,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font: inherit;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin-top: 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fdfdff;
+}
+
+/* ==================================================
+   LAYOUT
+================================================== */
 
 .container {
   width: min(960px, calc(100% - 2rem));
@@ -45,6 +88,23 @@ a {
   gap: 1rem;
   padding: 1rem 0;
 }
+
+footer.site-footer {
+  text-align: center;
+  padding: 1rem 0 2rem;
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ==================================================
+   COMPONENTS
+================================================== */
 
 .site-header h1 {
   margin: 0;
@@ -105,35 +165,6 @@ a {
 .card form {
   display: grid;
   gap: 1rem;
-}
-
-button,
-.input,
-select,
-textarea,
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  font: inherit;
-}
-
-label {
-  display: block;
-  margin-top: 1rem;
-  font-weight: 600;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea,
-select {
-  width: 100%;
-  padding: 0.9rem 1rem;
-  margin-top: 0.4rem;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: #fdfdff;
 }
 
 button,
@@ -233,15 +264,6 @@ tr:nth-child(even) {
   margin-top: 1rem;
 }
 
-footer.site-footer {
-  text-align: center;
-  padding: 1rem 0 2rem;
-  color: var(--muted);
-}
-
-@media (max-width: 600px) {
-  .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
+/* ==================================================
+   UTILITIES
+================================================== */
