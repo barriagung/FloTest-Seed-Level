@@ -1,20 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FloTest - Edit Test</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
-    <header>
-    <nav></nav>
-</header>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1>Edit Test</h1>
+            <nav aria-label="Navigasi admin">
+                <a href="../dashboard.html">Dashboard</a>
+                <a class="logout" href="../../index.html">Logout</a>
+            </nav>
+        </div>
+    </header>
 
-<main>
-    <section></section>
-</main>
+    <main class="container">
+        <section class="card">
+            <h2>Edit Test</h2>
 
-<footer></footer>
+            <form action="#" method="post">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" value="HTML Basic" placeholder="Enter test title" required>
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="5" placeholder="Enter test description">Sebuah test dasar HTML untuk pemula.</textarea>
+
+                <label for="mentor">Mentor</label>
+                <select id="mentor" name="mentor" required>
+                    <option value="">-- Pilih Mentor --</option>
+                    <option value="mentor-a" selected>Mentor A</option>
+                    <option value="mentor-b">Mentor B</option>
+                </select>
+
+                <label for="status">Status</label>
+                <select id="status" name="status" required>
+                    <option value="published" selected>Published</option>
+                    <option value="draft">Draft</option>
+                </select>
+
+                <div class="form-actions">
+                    <button type="submit" class="button">Update</button>
+                    <a href="index.html" class="button secondary">Cancel</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>FloTest &copy; 2026</p>
+    </footer>
 </body>
 </html>
