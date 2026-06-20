@@ -89,6 +89,27 @@ select {
   padding: 1rem 0;
 }
 
+/* Card header: used on pages to align title and actions */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Form actions placement (layout) */
+.form-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+/* Edit */
+.table-actions { 
+  display:flex; 
+  gap:0.5rem; 
+}
+/* End Edit */
+
 footer.site-footer {
   text-align: center;
   padding: 1rem 0 2rem;
@@ -101,6 +122,7 @@ footer.site-footer {
     align-items: flex-start;
   }
 }
+
 
 /* ==================================================
    COMPONENTS
@@ -188,6 +210,24 @@ button.secondary,
   color: var(--text);
 }
 
+
+
+.btn-delete { 
+  background:#ef4444; 
+  color:white; 
+  border-radius:8px; 
+  padding:0.5rem 0.8rem; 
+  border:none; 
+  cursor:pointer; 
+}
+
+.btn-edit { 
+  background:transparent; 
+  border-radius:8px; 
+  padding:0.45rem 0.7rem; 
+  border:none; 
+}
+
 .login-links {
   margin-top: 1.5rem;
 }
@@ -195,6 +235,14 @@ button.secondary,
 .login-links p {
   margin: 0 0 0.75rem;
   color: var(--muted);
+}
+
+/* Component: full-width button variant for forms */
+.button.full {
+  display: block;
+  width: 100%;
+  padding: 0.95rem 1.25rem;
+  font-weight: 800;
 }
 
 .summary-grid {
