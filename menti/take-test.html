@@ -9,7 +9,9 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <h1>Kerjakan Tes</h1>
+      <div>
+        <h1>Kerjakan Tes</h1>
+      </div>
       <nav aria-label="Navigasi kerjakan tes">
         <a href="dashboard.html">Dashboard</a>
         <a class="logout" href="../index.html">Logout</a>
@@ -18,28 +20,55 @@
   </header>
 
   <main class="container">
-    <section class="card content-card">
-      <h2>HTML Basic Test</h2>
-      <form action="result.html" method="get">
-        <fieldset>
-          <legend>Apa fungsi HTML?</legend>
-          <label><input type="radio" name="answer" value="A"> A. HyperText Markup Language</label>
-          <label><input type="radio" name="answer" value="B"> B. HyperText Markdown Language</label>
-          <label><input type="radio" name="answer" value="C"> C. HighText Machine Language</label>
-          <label><input type="radio" name="answer" value="D"> D. Home Tool Markup Language</label>
-        </fieldset>
+    <section class="progress-section">
+      <div class="progress-info">
+        <span>HTML Basic - Soal 1 dari 10</span>
+        <span>10%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 10%;"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Pertanyaan 1</h2>
+      <p>Apa yang dimaksud dengan tag HTML?</p>
+
+      <form action="#" method="post">
+        <div>
+          <p>Pilih jawaban yang benar:</p>
+          <div class="answer-option">
+            <input type="radio" id="option-a" name="answer" value="A" required>
+            <label for="option-a">A. Instruksi untuk browser tentang cara menampilkan konten</label>
+          </div>
+
+          <div class="answer-option">
+            <input type="radio" id="option-b" name="answer" value="B">
+            <label for="option-b">B. Bahasa pemrograman untuk membuat aplikasi</label>
+          </div>
+
+          <div class="answer-option">
+            <input type="radio" id="option-c" name="answer" value="C">
+            <label for="option-c">C. Format untuk menyimpan file di komputer</label>
+          </div>
+
+          <div class="answer-option">
+            <input type="radio" id="option-d" name="answer" value="D">
+            <label for="option-d">D. Protokol untuk mengirim data di internet</label>
+          </div>
+        </div>
 
         <div class="form-actions">
-          <button class="button secondary" type="button" onclick="window.location.href='dashboard.html'">Sebelumnya</button>
-          <button class="button secondary" type="button" onclick="window.location.href=''">Selanjutnya</button>
-          <button class="button" type="submit">Submit</button>
+          <button type="button" class="button secondary" disabled>Sebelumnya</button>
+          <button type="button" class="button">Selanjutnya</button>
+          <button type="submit" class="button">Submit Jawaban</button>
         </div>
       </form>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>FloTest - Kerjakan Tes</p>
+    <p>FloTest &copy; 2026</p>
   </footer>
 </body>
 </html>
