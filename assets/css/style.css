@@ -78,7 +78,7 @@ textarea {
   margin: 0 auto;
   padding: 1.5rem 0;
 }
-
+/*--header--*/
 .site-header {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
@@ -99,6 +99,7 @@ textarea {
   align-items: center;
   margin-bottom: 1rem;
 }
+/*--header--*/
 
 .form-actions {
   margin-top: 1rem;
@@ -111,9 +112,9 @@ textarea {
 }
 
 /* Edit */
-.table-actions { 
-  display:flex; 
-  gap:0.5rem; 
+.table-actions {
+  display: flex;
+  gap: 0.5rem;
 }
 
 footer.site-footer {
@@ -121,14 +122,6 @@ footer.site-footer {
   padding: 1rem 0 2rem;
   color: var(--muted);
 }
-
-@media (max-width: 600px) {
-  .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
 
 /* ==================================================
    COMPONENTS
@@ -162,7 +155,7 @@ footer.site-footer {
   text-decoration: none;
 }
 
-.site-header nav a.logout{
+.site-header nav a.logout {
   background: #ef4444;
 }
 
@@ -224,20 +217,20 @@ button.secondary,
   color: var(--text);
 }
 
-.btn-delete { 
-  background:#ef4444; 
-  color:white; 
-  border-radius:8px; 
-  padding:0.5rem 0.8rem; 
-  border:none; 
-  cursor:pointer; 
+.btn-delete {
+  background: #ef4444;
+  color: white;
+  border-radius: 8px;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  cursor: pointer;
 }
 
-.btn-edit { 
-  background:transparent; 
-  border-radius:8px; 
-  padding:0.45rem 0.7rem; 
-  border:none; 
+.btn-edit {
+  background: transparent;
+  border-radius: 8px;
+  padding: 0.45rem 0.7rem;
+  border: none;
 }
 
 .login-links {
@@ -248,7 +241,6 @@ button.secondary,
   margin: 0 0 0.75rem;
   color: var(--muted);
 }
-
 
 .button.full {
   display: block;
@@ -351,18 +343,6 @@ tr:nth-child(even) {
   height: 100%;
   background: var(--primary);
   transition: width 0.3s ease;
-}
-
-fieldset {
-  border: none;
-  padding: 0;
-  margin: 1.5rem 0;
-}
-
-legend {
-  display: block;
-  margin-bottom: 1rem;
-  font-weight: 600;
 }
 
 .answer-option {
